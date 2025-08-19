@@ -1,19 +1,33 @@
-html, body {
-  margin: 0px;
-  padding: 20px;
-  background-color:#E2AFAF;
- color:"#000";
-  font-weight: bold
-  font-size: 18px
-   
-}
-canvas {
-  display: block;
-}
+/*variaveis*/
+:root {
+  --preto: #000;
+  --branco: #fff;
+  --lilas-claro: #eb76db;
+  --azul-medio: #2f4dd1;
+  }
+  /*corpo da pagina*/
+ body {
+  color: var(--branco); /*cor da fonte*/
+  background-color:var(--preto);/*cor da fonte*/
+  margin: 0px; /* não tera margem padrão*/
+  }
 
-h2 {
-  color: #000;
-  font-weight:bold
-    font-size:32px;
-  text-decoration: underline;
- }
+  header {
+    border: solid 2px;
+    border-color: var(--branco);/*cor da borda*/
+    padding: 20px;/*espaçamento interno*/
+    font-size: 32px;/*tamanho da fonte*/
+    color: var(--azul-medio);/*cor da fonte*/
+    }
+
+    section {
+      background-color: var(--lilas-claro);/*cor de fundo*/
+      padding-bottom: 80px;/*espaçamento inferior*/
+      padding-top: 80px;/*espaçamento superior*/
+      display: flex;/*alterar a disposição*/
+      justify-content: center;/*justficado no centro*/
+      }
+
+      div {
+        margin-right: 20px;/*margem a direita*/
+        }
